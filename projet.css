@@ -8,22 +8,31 @@ body {
 header{
     /* background-color: aqua; */
     background-image: url(./hero-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 .filtre{
-    background-color: rgba(87, 81, 81, 0.418);
+    background-color: rgba(73, 69, 69, 0.63);
 }
 
 nav {
     /* background-color: aqua; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     /* border: 3px solid RED; */
     height: 100px;
+    margin-left: 70px;
 }
 
 ul{
+    /* border: 3px solid; */
+
     margin-left: 190px;
     font-size: 16px;
 }
@@ -63,44 +72,29 @@ button {
 
 }
 
-footer {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background: rgb(64, 64, 64);
-    width: 100%;
-    height: 180px;
-}
+
 
 .trait{
     position: relative;
     border-top: 2px solid red;
-    width: 100px;
-    margin-left: 300px;
+    width: 200px;
+    /* margin-left: 300px; */
 }
 #section1{
     display: flex;
-    justify-content: center;
+    flex-direction:column;
+    /* justify-content:center; */
+    align-items:center;
     color: white;
-    /* border: 4px solid; */
-    padding: 70px;
+    border: 4px solid;
+    padding: 250px;
     font-family: "Montserrat", sans-serif;
+    font-size: xx-large;
 }
-#section2{
-    position: sticky;
-    display: grid;
-    justify-content: center;
-    align-items: first baseline;
-    color: white;
-    /* border: 4px solid; */
-    padding: 70px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 50px;
-}
+
 #boutonlearnmore{
-    position: sticky;
-    text-align: center;
-    margin-left: 190px;
+    /* border:3px solid; */
+    margin-left: 200px;
 }
 
 .reglesitation{    
@@ -156,12 +150,26 @@ h4{
     font-family: "Montserrat Sans", sans-serif;
     font-size: 16px
 }
+.marcheur{
+    width: 517px;
+    height: 322px;
+}
+.ombre{
+    /* position: absolute; */
+    border: 3px solid;
+    background-color: rgb(148, 145, 145);
+    width: 517px;
+    height: 322px;
+}
 .Randonneur1{
     text-align: center;
     font-family: "noto Sans", sans-serif;
     font-size: 14px;
 }
-
+.marcheuse{
+    width: 517px;
+    height: 322px;
+}
 .Randonneur2{
     text-align: center;
     font-family: "noto Sans", sans-serif;
@@ -171,4 +179,103 @@ h4{
     position: relative;
     top: 10px;
     left: 100px;
+}footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgb(37, 36, 36);
+    width: 100%;
+    height: 180px;
+}
+
+.photoarriereplan{
+    background-image: url(section-bg-img.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    height: 588px;
+    color: white;
+}
+
+.textesurplan{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:last baseline;
+    border: 3px solid;
+    width: 1300px;
+    height: 600px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+}
+h3{
+    font-family: "Montserrat Sans",sans-serif;
+    font-size: 32px;
+    font-weight:bolder;
+}
+
+.trait3{
+    border-bottom: 2px solid red;
+    width: 60px;
+}
+.destinationsection{
+    border: 2px solid red;
+    width: auto;
+    height: 700px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.textegauche{
+    border: 2px solid red;   
+    width: 400px;
+    height: 500px;
+    /* margin-top: 90px; */
+    font-family: "Noto Sans",sans-serif;
+}
+.photo{
+    border: 2px solid red;   
+    width: 670px;
+    height: 500px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.photo1{
+    border: 3px solid;
+    width: 300px;
+    height: 200px;
+    background-image: url(./photo1.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.photo2{
+    border: 3px solid;
+    width: 300px;
+    height: 200px;
+    background-image: url(./photo2.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    
+}
+.photo3{
+    border: 3px solid;
+    width: 300px;
+    height: 200px;
+    background-image: url(./photo3.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    
+}
+.photo4{
+    border: 3px solid;
+    width: 300px;
+    height: 200px;
+    background-image: url(./photo4.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    
 }
