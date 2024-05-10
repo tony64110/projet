@@ -11,9 +11,9 @@ header{
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 .filtre{
     background-color: rgba(73, 69, 69, 0.63);
