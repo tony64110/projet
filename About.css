@@ -5,76 +5,66 @@ body {
     margin: 0%
 }
 
-h2 {
-    font-family: "Montserrat Sans", sans-serif;
-    font-weight: 700;
-    font-size: 34px;
-}
-h4 {
-    font-family: "Montserrat Sans", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-p {
-    display: grid;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color:rgb(64, 64, 64)
-}
-
-header {
+header{
     background-image: url(./fond-page2.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.filtre {
-    background-color: rgba(73, 69, 69, 0.63);
-}
-
-nav {
-    /* background-color: aqua; */
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    /* border: 3px solid RED; */
-    height: 100px;
-    margin-left: 70px;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+    width: 100%;
+    height: 700px;
+}
+main{
+    background-color: rgb(245, 245, 245);
 }
 
-ul {
-    /* border: 3px solid; */
-
-    margin-left: 190px;
-    font-size: 16px;
+.filtre2{
+    background-color: rgba(48, 46, 46, 0.63);
+    width: 100%;
+    height: 100%;
+}
+p{
+    color:rgb(64, 64, 64)
+}nav {
+    /* border: 2px solid; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+ul{
+    margin-left: 300px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 li {
     display: inline-block;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-
     list-style: none;
 }
-
-#logo {
-    padding-top: 16px;
+#logo{
+    background-image: url(./outdoor-adventure-exercice-main/blocs/logo.out.png);
+    margin-top: 18px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 80px;
+margin-left: 160px;
 }
-
-a {
+a{
     padding: 10px;
     text-decoration: none;
     font-family: "Noto Sans", sans-serif;
     color: white;
 }
-
-
 button {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     font-family: "Noto Sans", sans-serif;
     color: white;
@@ -83,76 +73,95 @@ button {
     background-color: rgb(251, 32, 86);
     font-family: "Noto Sans", sans-serif;
     margin-right: 200px;
-    width: 170px;
-    height: 50px;
-    right: 20px;
+    margin-top: -10px;
+    width: 220px;
+    height: 60px;
+    margin-right: 192px;
     cursor: pointer;
-
 }
-
-
-.trait {
-    position: relative;
-    border-top: 2px solid red;
-    width: 28px;
-    /* margin-left: 300px; */
+button:hover{
+    background-color: rgb(241, 7, 66);
 }
-
-.trait2 {
-    position: relative;
-    top:40px;
-    border-top: 2px solid red;
-    width: 10px;
+.trait{
+    border:2px solid rgb(251, 32, 86);
+    width: 50px;
+    margin-top: -30px;
+    /* margin-bottom: -30px; */
 }
-
-#section1 {
+#section1{
     display: flex;
-    /* flex-direction:column; */
-    justify-content: center;
-    /* align-items: ; */
+    flex-direction:column;
+    align-items:center;
     color: white;
-    /* border: 4px solid; */
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding: 250px;
     font-family: "Montserrat", sans-serif;
-    font-size: 45px;
+    font-size: xx-large;
+    margin-top: -50px;
 }
-
+h1{
+    font-size: 70px;
+}
+h4{
+    font-size: 30px;
+    font-family: "Montserrat Sans", sans-serif;
+}
 main {
-    /* border: 3px solid; */
-    height: 1000px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
 }
 .section2plan{
-    /* border: 3px solid; */
-    width: 100%;
-    height: 500px;
+    /* border: 2px solid; */
+    width: 1290;
+    height: 700px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .section2 {
-    /* border: 3px solid; */
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
     height: 400px;
     width: 500px;
-    margin: 100px;
+}
+.section2 h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Montserrat Sans", sans-serif;
+}
+.section2p1{
+    margin-top: 30px;
+    width: 500px;
+    height: 90px;
+    font-size: 18px;
+    font-family: "Noto Sans", sans-serif;
+}
+.section2p2{
+    width: 500px;
+    height: 100px;
+    font-size: 18px;
+    font-family: "Noto Sans", sans-serif;
 }
 
+
 .image{
-    border: 3px solid white;
+    /* border: 3px solid white; */
     border-radius: 1.5%;
     height: 355px;
     width: 600px;
     background-size: 100%;
     background-image: url(./outdoor-image-02.jpg);
+    filter: drop-shadow(10px 10px 1px #C0C0C0);
 }
 
 .section3-4 {
     /* border: 3px solid; */
+    /* background-color: aqua; */
     display: flex;
-    justify-content: space-around;
-    height: 500px;
+    height:1000px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -162,8 +171,13 @@ main {
     /* border: 3px solid; */
     width: 30%;
     height: 400px;
+    display: flex;
+    flex-direction: column;
 }
-
+.section3-4 p{
+    font-size: 18px;
+    font-family: "Noto Sans", sans-serif;
+}
 .section4 {
     /* border: 3px solid; */
     width: 30%;
@@ -172,26 +186,31 @@ main {
 }
 .ligne{
     /* border: 3px solid; */
-    width: 60%;
+    width: 100%;
+    height: 50px;
     position: relative;
-    left: 20px;
     top: 10px;
+}
+.tiret{
+    /* border: 3px solid; */
+
+    color: rgb(251, 32, 86);
 }
 
 footer {
-    font-family: "Noto Sans", sans-serif;
-    font-weight:normal;
-    font-size: 19px;
     display: grid;
     justify-content: center;
     align-items: center;
     background: rgb(37, 36, 36);
     width: 100%;
-    height: 180px;
+    height: 240px;
     color: white;
 }
-
-.footer2 {
+footer p {
+    line-height: 50px;
     text-align: center;
     color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Noto Sans", sans-serif;
 }

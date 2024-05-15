@@ -2,43 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    margin: 0%;
-    font-family: "Montserrat Sans", sans-serif;
+    margin: 0%
 }
 
 header{
-    /* background-color: aqua; */
     background-image: url(./fond-page3.jpg);
-    /* opacity: 0.4; */
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.39);
+    opacity: 0.9;
+    width: 100%;
+    height: 700px;
+}
+main{
+    background-color: rgb(245, 245, 245);
     font-family: "Montserrat Sans", sans-serif;
 }
-h1{
-    font-size: 70px;
-    font-weight: 700;
+p{
+    color:rgb(64, 64, 64)
 }
-.filtre{
-    background-color: rgba(114, 111, 111, 0.295);
-}
-
 nav {
+    /* border: 2px solid; */
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    /* border: 3px solid RED; */
     height: 100px;
-    margin-left: 70px;
 }
-
 ul{
-    margin-left: 190px;
-    font-size: 16px;
+    margin-left: 300px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 li {
@@ -46,7 +45,13 @@ li {
     list-style: none;
 }
 #logo{
-    padding-top: 16px;
+    background-image: url(./outdoor-adventure-exercice-main/blocs/logo.out.png);
+    margin-top: 18px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 80px;
+margin-left: 160px;
 }
 a{
     padding: 10px;
@@ -55,7 +60,7 @@ a{
     color: white;
 }
 button {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     font-family: "Noto Sans", sans-serif;
     color: white;
@@ -64,11 +69,14 @@ button {
     background-color: rgb(251, 32, 86);
     font-family: "Noto Sans", sans-serif;
     margin-right: 200px;
-    width: 170px;
-    height: 50px;
-    right: 20px;
+    margin-top: -10px;
+    width: 220px;
+    height: 60px;
+    margin-right: 192px;
     cursor: pointer;
-
+}
+button:hover{
+    background-color: rgb(241, 7, 66);
 }
 
 .trait{
@@ -99,32 +107,38 @@ button {
     padding-top: 100px;
     padding-bottom: 200px;
     font-family: "Montserrat", sans-serif;
-    font-size: 45px;
+    font-size: 55px;
+    font-weight:bolder;
 }
 .section2{
     /* border: 3px solid; */
     width: 100%;
-    height: 250px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
 }
+
 h2{
     /* border: 3px solid; */
-    font-size: 35px;
+    font-size: 50px;
+    font-weight: bold;
     text-align: center;
 }
 h5{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
+}
+main{
+    width: 100%;
 }
 main p{
     /* border: 3px solid; */
-    width: 800px;
+    width: 950px;
     height: 60px;
     font-family: "Noto Sans", sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     color: rgb(64, 64, 64);
     text-align: center;
 }
@@ -135,21 +149,22 @@ main p{
     justify-content: space-evenly;
     align-items: center;
 }
-section p{
-    width: 500px;
+.section3 p{
+    width: 600px;
 }
+
 .gauche{
     /* border: 3px solid; */
-    height: 500px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .droite{
     /* border: 3px solid; */
-    height: 500px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,18 +175,26 @@ h4{
 }
 .photo1{
     background-image: url(./Servicesphoto1.jpg);
-    width: 500px;
-    height: 322px;
-    background-size: 100%;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
     background-repeat: no-repeat;
+    /* border: 2px solid white; */
+    border-radius: 1.5%;
+    filter: drop-shadow(10px 10px 1px #C0C0C0);
+
 
 }
 .photo2{
     background-image: url(./servicesphoto2.jpg);
-    width: 500px;
-    height: 322px;
-    background-size: 100%;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
     background-repeat: no-repeat;
+    /* border: 2px solid white; */
+    border-radius: 1.5%;
+    filter: drop-shadow(10px 10px 1px #C0C0C0);
+
 
 }
 .section4{
@@ -181,37 +204,48 @@ h4{
     justify-content: space-evenly;
     align-items: center;
 }
+.section4 p{
+    width: 600px;
+}
 
 .gauche2{
     /* border: 3px solid; */
-    height: 500px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .droite2{
     /* border: 3px solid; */
-    height: 500px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .photo3{
     background-image: url(./servicesphoto3.jpg);
-    width: 500px;
-    height: 322px;
-    background-size: 100%;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
     background-repeat: no-repeat;
+    /* border: 2px solid white; */
+    border-radius: 1.5%;
+    filter: drop-shadow(10px 10px 1px #C0C0C0);
+
 
 }
 .photo4{
     background-image: url(./Servicesphoto4.jpg);
-    width: 500px;
-    height: 322px;
-    background-size: 100%;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
     background-repeat: no-repeat;
+    /* border: 2px solid white; */
+    border-radius: 1.5%;
+    filter: drop-shadow(10px 10px 1px #C0C0C0);
+
 
 }
 .ombre{
@@ -223,7 +257,7 @@ h4{
     height: 322px;
 }
 h3{
-    font-size: 24px;
+    font-size: 30px;
 }
 .section5 {
     /* border: 3px solid; */
@@ -241,31 +275,45 @@ h3{
     /* justify-content:center; */
     flex-direction: column;
 }
+.gauche3 p{
+    /* border: 3px solid; */
+    width: 100%;
+    text-align: start;
+}
 .droite3{
     /* border: 3px solid; */
     height: 500px;
     width: 40%;
 }
+.droite3 p{
+    /* border: 3px solid; */
+    width: 100%;
+    text-align: start;
+}
 .ligne{
     display: flex;
     text-align: left;
-    color: black;
+    /* color: black; */
     /* border: 3px solid; */
     width: 400px;
     height: 50px;
     position: relative;
     left: 20px;
-    top: 10px;
 }
 footer {
     display: grid;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     background: rgb(37, 36, 36);
     width: 100%;
-    height: 180px;
+    height: 240px;
     color: white;
 }
-.footer2{
+footer p {
+    line-height: 50px;
     text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Noto Sans", sans-serif;
 }
