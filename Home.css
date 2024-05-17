@@ -1,39 +1,240 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@media (max-width:1024px) {
+    body {
+        width: 1024px;
+      }
+    header {
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1{
+        text-align: center;
+    }
+    .reglesitation{
+        color: rgb(44, 43, 43);
+    }
+    .Randonneur{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .photorandonneur1{
+        width: 20%;
+    }
+    .marcheuse{
+        width: 1cqmax;
+    }
+
+
+    .photoarriereplan{
+    width: 100%;
+    }
+    .textesurplan {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    #Guillemet{
+        display: none;
+    }
+
+    .destinationsection {
+        justify-content: space-around;
+    }
+    .textegauche{
+        justify-content: start;
+    }
+    .photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+        /* width: 30%; */
+    }
+    footer{
+        bottom: 0%;
+    }
+}
+@media (max-width:768px) {
+    body {
+        width: 768px;
+      }
+    header {
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1{
+        text-align: center;
+    }
+    .reglesitation{
+        color: rgb(44, 43, 43);
+    }
+    .Randonneur{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .photorandonneur1{
+        width: 20%;
+    }
+    .marcheuse{
+        width: 1cqmax;
+    }
+
+
+    .photoarriereplan{
+    width: 100%;
+    }
+    .textesurplan {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    #Guillemet{
+        display: none;
+    }
+
+    .destinationsection {
+        justify-content: space-around;
+    }
+    .textegauche{
+        justify-content: start;
+    }
+    .photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+        /* width: 30%; */
+    }
+    footer{
+        bottom: 0%;
+    }
+}
+@media (max-width:480px) {
+    body {
+        width: 480px;
+      }
+    header {
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1{
+        text-align: center;
+    }
+    .reglesitation{
+        color: rgb(44, 43, 43);
+    }
+    .Randonneur{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .marcheuse{
+        width: 1cqmax;
+    }
+    .photoarriereplan{
+    width: 100%;
+    }
+    .textesurplan {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    #Guillemet{
+        display: none;
+    }
+
+    .destinationsection {
+        justify-content: space-around;
+    }
+    .textegauche{
+        justify-content: start;
+    }
+    .photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+        /* width: 30%; */
+    }
+    footer{
+        bottom: 0%;
+    }
+}
+
 body {
     margin: 0%
 }
+
 header {
     background-image: url(./hero-bg.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-flex-direction: column;    
-align-items: center;
+    flex-direction: column;
+    align-items: center;
     background-blend-mode: color;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0.9;
     width: 100%;
 }
+
 main {
     background-color: rgb(245, 245, 245);
 }
+
 p {
     color: rgb(64, 64, 64)
 }
 
 nav {
-    /* border: 2px solid; */
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
 }
-ul{
-    margin-left: 300px;
+
+ul {
     font-size: 20px;
     display: flex;
     gap: 20px;
@@ -43,21 +244,19 @@ li {
     display: inline-block;
     list-style: none;
 }
-#logo{
-    background-image: url(./outdoor-adventure-exercice-main/blocs/logo.out.png);
-    margin-top: 18px;
+
+#logo {
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 80px;
-margin-left: 160px;
 }
-a{
+
+a {
     padding: 10px;
     text-decoration: none;
     font-family: "Noto Sans", sans-serif;
     color: white;
 }
+
 button {
     font-size: 18px;
     font-weight: 700;
@@ -74,7 +273,8 @@ button {
     margin-right: 192px;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(241, 7, 66);
 }
 
@@ -85,6 +285,7 @@ button:hover{
     margin-top: -30px;
     margin-bottom: -30px;
 }
+
 #section1 {
     display: flex;
     flex-direction: column;
@@ -94,18 +295,22 @@ button:hover{
     font-family: "Montserrat", sans-serif;
     font-size: xx-large;
 }
+
 h1 {
     font-size: 70px;
 }
+
 h6 {
     margin-top: -20px;
     font-size: 27px;
 }
+
 #boutonlearnmore {
     font-size: 18px;
     width: 230px;
     height: 65px;
 }
+
 #boutonlearnmore2 {
     margin-top: 10px;
     margin-left: 150px;
@@ -113,10 +318,12 @@ h6 {
     height: 65px;
     font-size: 16px;
 }
+
 .reglesitation {
     position: relative;
     height: 200px;
 }
+
 .sitation1 {
     display: flex;
     justify-content: center;
@@ -125,11 +332,13 @@ h6 {
     font-family: "noto Sans", sans-serif;
     font-size: 18px;
 }
+
 .sitation2 {
     text-align: center;
     height: 70px;
     font-size: 14px;
 }
+
 #Guillemet {
     position: absolute;
     top: 50px;
@@ -137,70 +346,65 @@ h6 {
     width: 100px;
     height: 100px;
 }
+
 .titreevenementsection {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
 }
+
 .trait2 {
-    position: relative;
     border-bottom: 4px solid rgb(251, 32, 86);
-    width: 120px;
-    left: 830px;
+    width: 5%;
 }
+
 .Randonneur {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 120px;
-    width: 100%;
-    height: 700px;
-}
-.photorandonneur1 {
-    border: 1px solid white;
-    border-radius: 2%;
-    background-image: url(./marcheur.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-    filter: drop-shadow(10px 10px 1px #C0C0C0);
-    width: 530px;
-    height: 330px;
-}
-.Randonneur1 {
-    text-align: center;
-    font-family: "noto Sans", sans-serif;
-    font-size: 17px;
-    width: 530px;
-    height: 640px;
+    align-items: center;
 }
 
+.Randonneur1 img {
+    border-radius: 2%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(10% 10% 1% #C0C0C0);
+    max-width: 100%;
+}
+
+.Randonneur1 {
+    border: 3px solid; 
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.randonneur1 p{
+    width: 100%;
+}
 h4 {
     font-family: "Montserrat Sans", sans-serif;
     font-size: 20px
 }
-.marcheuse {
-    border: 1px solid white;
+
+.Randonneur2 img{
+    /* border: 1px solid white; */
     border-radius: 2%;
-    background-image: url(./marcheuse.jpg);
-    background-size: 100%;
+    /* background-size: 100%; */
     background-repeat: no-repeat;
     filter: drop-shadow(10px 10px 1px #C0C0C0);
-    width: 530px;
-    height: 330px;
+    max-width: 100%;
+
 }
+
 .Randonneur2 {
-    text-align: center;
-    font-family: "noto Sans", sans-serif;
-    font-size: 17px;
-    margin-right: 50px;
-    width: 530px;
-    height: 640px;
-}
-.boutonrandonneur {
-    position: relative;
-    top: 10px;
-    left: 100px;
+    border: 3px solid; 
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .photoarriereplan {
     background-image: url(section-bg-img.jpg);
@@ -209,18 +413,20 @@ h4 {
     background-repeat: no-repeat;
     background-blend-mode: color;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+
 .textesurplan {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 3px solid; */
-    width: 600px;
-    height: 600px;
+    align-content: center;
+    width: 40%;
+    height: 70%;
     font-family: "Noto Sans", sans-serif;
     font-size: 17px;
-    margin-left: 1000px;
     color: white;
 
 }
@@ -231,120 +437,99 @@ h3 {
     font-weight: 900;
     margin-bottom: 100px;
 }
-.textesurplan p{
-    /* line-height: 1px; */
-    margin-bottom: 70px;
+
+.textesurplan p {
     color: white;
 }
-
-.boutonrandonneur4 {
-    margin-bottom: 200px;
-}
-
 .trait3 {
     border-bottom: 4px solid rgb(251, 32, 86);
     width: 60px;
-    margin-top: -80px;
 }
+
 .destinationsection {
     /* border: 2px solid red; */
     width: auto;
-    height: 800px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center
+    align-items: center;
+    margin:10%;
 }
+
 .textegauche {
-    /* border: 2px solid red;    */
-    width: 370px;
-    height: 500px;
-    margin-bottom: 250px;
-    margin-left: 90px;
     font-family: "Noto Sans", sans-serif;
     font-size: 18px;
     line-height: 33px;
+    width: 40%;
 }
+
 h5 {
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     font-size: 45px;
     line-height: 50px;
 }
+
 .trait4 {
     border-bottom: 4px solid rgb(251, 32, 86);
-    width: 60px;
-    margin-top: -30px;
-    margin-bottom: 40px;
+    width: 15%;
+
 }
-.boutonrandonneur4 {
-    margin-top: 10px;
-    margin-left: 30px;
-    font-size: 16px;
+
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 .photo {
-    width: 900px;
-    height: 670px;
-    position: relative;
-    margin-right: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
+.photo img{
+    max-width: 100%;
+    display: inline-block;   
+}
+
 .photo1 {
-    position: absolute;
     border: 3px solid white;
     border-radius: 1.5%;
-    width: 430px;
-    height: 230px;
-    margin-left: 13px;
-    margin-top: 13px;
-    background-image: url(./photo1.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    max-width: 100%;
 }
+
 .photo2 {
-    position: absolute;
-    right: 0px;
-    top: 0px;
     border: 3px solid white;
     border-radius: 1.5%;
-    width: 430px;
-    height: 400px;
-    margin-top: 13px;
-    background-image: url(./photo3.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    max-width: 100%;
 }
+
 .photo3 {
-    position: absolute;
-    bottom: 0px;
     border: 3px solid white;
     border-radius: 1.5%;
-    margin-left: 13px;
-    width: 430px;
-    height: 400px;
-    background-image: url(./photo2.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    max-width: 100%;
 }
+
 .photo4 {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
     border: 3px solid white;
     border-radius: 1.5%;
-    width: 430px;
-    height: 220px;
-    margin-bottom: 10px;
-    background-image: url(./photo4.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    max-width: 100%;
 }
+
 footer {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: rgb(37, 36, 36);
     width: 100%;
-    height: 240px;
+    height: 60%;
     color: white;
 }
+
 footer p {
     line-height: 50px;
     text-align: center;
