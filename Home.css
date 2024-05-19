@@ -1,205 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media (max-width:1024px) {
-    body {
-        width: 1024px;
-      }
-    header {
-        display: flex;
-        width: max-content;
-        height: max-content;
-    }
 
-    nav {
-        flex-direction: column;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .h1{
-        text-align: center;
-    }
-    .reglesitation{
-        color: rgb(44, 43, 43);
-    }
-    .Randonneur{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    .photorandonneur1{
-        width: 20%;
-    }
-    .marcheuse{
-        width: 1cqmax;
-    }
-
-
-    .photoarriereplan{
-    width: 100%;
-    }
-    .textesurplan {
-        flex-direction: column;
-        margin-left: 0%;
-    }
-
-    #Guillemet{
-        display: none;
-    }
-
-    .destinationsection {
-        justify-content: space-around;
-    }
-    .textegauche{
-        justify-content: start;
-    }
-    .photo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 10px;
-        /* width: 30%; */
-    }
-    footer{
-        bottom: 0%;
-    }
-}
-@media (max-width:768px) {
-    body {
-        width: 768px;
-      }
-    header {
-        display: flex;
-        width: max-content;
-        height: max-content;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .h1{
-        text-align: center;
-    }
-    .reglesitation{
-        color: rgb(44, 43, 43);
-    }
-    .Randonneur{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    .photorandonneur1{
-        width: 20%;
-    }
-    .marcheuse{
-        width: 1cqmax;
-    }
-
-
-    .photoarriereplan{
-    width: 100%;
-    }
-    .textesurplan {
-        flex-direction: column;
-        margin-left: 0%;
-    }
-
-    #Guillemet{
-        display: none;
-    }
-
-    .destinationsection {
-        justify-content: space-around;
-    }
-    .textegauche{
-        justify-content: start;
-    }
-    .photo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 10px;
-        /* width: 30%; */
-    }
-    footer{
-        bottom: 0%;
-    }
-}
-@media (max-width:480px) {
-    body {
-        width: 480px;
-      }
-    header {
-        display: flex;
-        width: max-content;
-        height: max-content;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .h1{
-        text-align: center;
-    }
-    .reglesitation{
-        color: rgb(44, 43, 43);
-    }
-    .Randonneur{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .marcheuse{
-        width: 1cqmax;
-    }
-    .photoarriereplan{
-    width: 100%;
-    }
-    .textesurplan {
-        flex-direction: column;
-        margin-left: 0%;
-    }
-
-    #Guillemet{
-        display: none;
-    }
-
-    .destinationsection {
-        justify-content: space-around;
-    }
-    .textegauche{
-        justify-content: start;
-    }
-    .photo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 10px;
-        /* width: 30%; */
-    }
-    footer{
-        bottom: 0%;
-    }
-}
 
 body {
     margin: 0%
@@ -217,6 +19,7 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0.9;
     width: 100%;
+    height: 90vh;
 }
 
 main {
@@ -232,9 +35,12 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 10%;
 }
 
 ul {
+    display: flex;
+    align-items: baseline;
     font-size: 20px;
     display: flex;
     gap: 20px;
@@ -248,6 +54,9 @@ li {
 #logo {
     background-size: 100%;
     background-repeat: no-repeat;
+}
+#logonoir{
+    display: none;
 }
 
 a {
@@ -266,11 +75,8 @@ button {
     border-radius: 90px;
     background-color: rgb(251, 32, 86);
     font-family: "Noto Sans", sans-serif;
-    margin-right: 200px;
-    margin-top: -10px;
     width: 220px;
     height: 60px;
-    margin-right: 192px;
     cursor: pointer;
 }
 
@@ -289,11 +95,12 @@ button:hover {
 #section1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: white;
-    padding: 250px;
     font-family: "Montserrat", sans-serif;
     font-size: xx-large;
+    height: 80%;
 }
 
 h1 {
@@ -305,46 +112,31 @@ h6 {
     font-size: 27px;
 }
 
-#boutonlearnmore {
-    font-size: 18px;
-    width: 230px;
-    height: 65px;
+.reglesitation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
-#boutonlearnmore2 {
-    margin-top: 10px;
-    margin-left: 150px;
-    width: 230px;
-    height: 65px;
-    font-size: 16px;
-}
-
-.reglesitation {
-    position: relative;
-    height: 200px;
+.plansitation12{
+    flex-direction: column;
 }
 
 .sitation1 {
+    /* border:3px solid; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
     font-family: "noto Sans", sans-serif;
     font-size: 18px;
 }
 
 .sitation2 {
     text-align: center;
-    height: 70px;
     font-size: 14px;
 }
 
-#Guillemet {
-    position: absolute;
-    top: 50px;
-    left: 330px;
-    width: 100px;
-    height: 100px;
+.reglesitation img{
+    width: 10%;
 }
 
 .titreevenementsection {
@@ -375,7 +167,7 @@ h6 {
 }
 
 .Randonneur1 {
-    border: 3px solid; 
+    /* border: 3px solid;  */
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -400,7 +192,7 @@ h4 {
 }
 
 .Randonneur2 {
-    border: 3px solid; 
+    /* border: 3px solid;  */
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -416,6 +208,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-content: center;
+    padding-bottom: 10%;
 }
 
 .textesurplan {
@@ -537,4 +330,272 @@ footer p {
     font-size: 20px;
     font-weight: 500;
     font-family: "Noto Sans", sans-serif;
+}
+@media (max-width:1024px) {
+    body {
+        width: 1024px;
+      }
+    header {
+        display: flex;
+        width: max-content;
+        height: max-content;
+    }
+    ul {
+        width: 100%;
+    }
+    .h1{
+        text-align: center;
+    }
+    main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .reglesitation{
+        color: rgb(44, 43, 43);
+    }
+    .Randonneur{
+        display: flex;
+    }
+    .photorandonneur1{
+        width: 20%;
+    }
+    .marcheuse{
+        width: 1cqmax;
+    }
+
+
+    .photoarriereplan{
+    width: 100%;
+    }
+    .textesurplan {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    #Guillemet{
+        display: none;
+    }
+
+    .destinationsection {
+        justify-content: space-around;
+    }
+    .textegauche{
+        justify-content: start;
+    }
+    .photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+        /* width: 30%; */
+    }
+    footer{
+        bottom: 0%;
+    }
+}
+@media (max-width:768px) {
+    body {
+        width: 768px;
+      }
+    header {
+        display: flex;
+        width: max-content;
+        height: max-content;
+        width: 100%;
+    }
+    #logo{
+        display: none;
+    }
+    #logonoir{
+        display: block;
+        width: 40%;
+    }
+    nav {
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        flex-direction: column;
+        gap: 3px;
+        max-width: 100%;
+        font-size: 15px;
+        position: absolute;
+        top: 80px;
+        display: none ;
+    }
+    a{
+        color: black;
+    }
+    .section1{
+        padding: 10%;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h6{
+        font-size: medium;
+        margin-top: 5%;
+    }
+    h1{
+        font-size: x-large;
+        text-align: center;
+        padding: 10%;
+    }
+    .titreevenementsection{
+        font-size: x-large;
+    }
+    p{
+        font-size: small;
+
+    }
+    .reglesitation{
+        color: rgb(44, 43, 43);
+        padding: 10%;
+    }
+    .Randonneur{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .photorandonneur1{
+        width: 20%;
+    }
+    .marcheuse{
+        width: 1cqmax;
+    }
+    .photoarriereplan{
+    width: 100%;
+    }
+    .textesurplan {
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .textesurplan h3{
+        font-size: x-large;
+        margin-bottom: 10%;
+    }
+
+    #Guillemet{
+        display: none;
+    }
+
+    .destinationsection {
+        justify-content: space-around;
+    }
+    .textegauche{
+        justify-content: start;
+    }
+    .textegauche h5{
+        font-size: medium;
+    }
+    .photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .footer2 p{
+        bottom: 0%;
+        font-size: small;
+    }
+}
+@media (max-width:480px) {
+    body {
+        width: 480px;
+      }
+    header {
+        display: flex;
+        width: max-content;
+        height: max-content;
+        width: 100%;
+
+    }
+
+    ul{
+        font-size: small;
+        align-items: center;
+    }
+    button{
+        font-size: 15px;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    #logo {
+        width: 50px;
+    }
+    ul {
+        gap: 1px;
+        max-width: 100%;
+        font-size: 15px;
+    }
+    .section1 h6{
+        font-size: 10px;
+    }
+    .section1 h1{
+        font-size: 10px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h1{
+        text-align: center;
+        font-size: 5px;
+    }
+    .reglesitation{
+        color: rgb(44, 43, 43);
+        flex-direction: column;
+    }
+    .Randonneur{
+        display: flex;
+        flex-direction: column;
+    }
+    .Randonneur1{
+        width: 70%;
+    }
+    .Randonneur2{
+        width: 70%;
+    }
+    .photoarriereplan{
+    width: 100%;
+    }
+    .textesurplan {
+        flex-direction: column;
+        font-size: 15px;
+        width: 100%;
+
+    }
+
+    .destinationsection {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .textegauche{
+        width: 100%;
+        font-size: 15px;
+    }
+    .photos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer,
+    .footer p {
+        font-size: 10px;
+    }
 }
