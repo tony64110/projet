@@ -194,7 +194,15 @@ footer {
     color: white;
 }
 
-footer p {
+footer {
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Noto Sans", sans-serif;
+}
+.footer2 p{
     line-height: 50px;
     text-align: center;
     color: white;

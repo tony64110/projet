@@ -128,11 +128,13 @@ main {
 
 
 .section2plan img{
-    width: 80%;
+    /* border: 1px solid white; */
+    border-radius: 2%;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    filter: drop-shadow(10px 10px 1px #C0C0C0);
     max-width: 100%;
-    border-radius: 1.5%;
-    background-size: cover;
-    filter: drop-shadow(1vw 1vw 1vw #8f8e8e);
+
 }
 
 .section3-4 {
@@ -176,7 +178,15 @@ footer {
     color: white;
 }
 
-footer p {
+footer {
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Noto Sans", sans-serif;
+}
+.footer2 p{
     line-height: 50px;
     text-align: center;
     color: white;
