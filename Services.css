@@ -44,6 +44,9 @@ li {
     display: inline-block;
     list-style: none;
 }
+.burger{
+    display: none;
+}
 #logo {
     background-size: 100%;
     background-repeat: no-repeat;
@@ -80,11 +83,9 @@ button:hover{
     width: 120px;
      /* margin-left: 800px;  */
 }
-.trait2 {
-    position: relative;
-    top:40px;
-    border-top: 4px solid rgb(251, 32, 86);
-    width: 10px;
+span{
+    color: rgb(251, 32, 86);
+    font-size: xx-large;
 }
 .trait3{
     position: relative;
@@ -101,7 +102,7 @@ button:hover{
     font-family: "Montserrat", sans-serif;
     font-size: 55px;
     font-weight:bolder;
-    padding:10%;
+    padding:5%;
 
 }
 .section2{
@@ -319,12 +320,11 @@ footer {
     }
     #logonoir{
         display: block;
-        width: 40%;
+        width: 20%;
     }
     nav {
         background: white;
         display: flex;
-        justify-content: center;
     }
     ul{
         flex-direction: column;
@@ -335,6 +335,25 @@ footer {
         top: 80px;
         display: none ;
     }
+    .burger{
+        display: block;
+        border: 1px solid rgb(251, 32, 86);
+        background-color: rgb(251, 32, 86);
+        border-radius: 2px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+    .burgertrait{
+        border: 0.5px solid white;
+        background-color: white;
+        width: 15px;
+    }
+
     a{
         color: black;
     }
@@ -344,7 +363,7 @@ footer {
         padding: 10%;
     }
     .section1{
-        padding: 10%;
+        padding: 0%;
     }
     main {
         display: flex;

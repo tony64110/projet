@@ -49,7 +49,6 @@ main p {
 
 
 nav {
-    /* border: 2px solid; */
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -64,6 +63,9 @@ ul{
 li {
     display: inline-block;
     list-style: none;
+}
+.burger{
+    display: none;
 }
 
 a{
@@ -104,7 +106,7 @@ button:hover{
     font-family: "Montserrat", sans-serif;
     font-size: 55px;
     font-weight:bolder;
-    padding:10%;
+    padding:5%;
 }
 .section2 {
     display: flex;
@@ -250,12 +252,11 @@ footer {
     }
     #logonoir{
         display: block;
-        width: 30%;
+        width: 20%;
     }
     nav {
         background: white;
         display: flex;
-        justify-content: center;    
     }
     ul{
         flex-direction: column;
@@ -267,7 +268,7 @@ footer {
         display: none ;
     }
     .section1{
-        padding: 10%;
+        padding: 0%;
 
     }
     main {
@@ -276,6 +277,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     #logo{
         width: 80%;
     }
@@ -324,9 +326,25 @@ footer {
         font-size: small;
         align-items: center;
     }
-    #logo{
-        width: 130%;
+    .burger{
+        display: block;
+        border: 1px solid rgb(251, 32, 86);
+        background-color: rgb(251, 32, 86);
+        border-radius: 2px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
     }
+    .burgertrait{
+        border: 0.5px solid white;
+        background-color: white;
+        width: 15px;
+    }
+
     button{
         width: 15%;
         font-weight: 500;

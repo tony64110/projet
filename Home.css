@@ -35,7 +35,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10%;
 }
 
 ul {
@@ -49,6 +48,9 @@ ul {
 li {
     display: inline-block;
     list-style: none;
+}
+.burger{
+    display: none;
 }
 
 #logo {
@@ -412,12 +414,11 @@ footer{
     }
     #logonoir{
         display: block;
-        width: 40%;
+        width: 20%;
     }
     nav {
         background: white;
         display: flex;
-        justify-content: center;
     }
     ul{
         flex-direction: column;
@@ -428,8 +429,31 @@ footer{
         top: 80px;
         display: none ;
     }
+    .burger{
+        display: block;
+        border: 1px solid rgb(251, 32, 86);
+        background-color: rgb(251, 32, 86);
+        border-radius: 2px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+    .burgertrait{
+        border: 0.5px solid white;
+        background-color: white;
+        width: 15px;
+    }
     a{
         color: black;
+    }
+    #boutonlearnmore, #boutonlearnmore2{
+        width: 120px;
+        height: 40px;
+        font-size: 10px;
     }
     .section1{
         padding: 10%;
@@ -535,9 +559,7 @@ footer{
         align-items: center;
         max-width: 100%;
     }
-    #logo {
-        width: 50px;
-    }
+
     ul {
         gap: 1px;
         max-width: 100%;
